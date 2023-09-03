@@ -1,20 +1,17 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
-# Project-007 : Clarus Library
+
+# Project-007 :  Library App React-Context-Router
 
 ## Description
 
-Project aims to create a Clarus Library.
+Project aims to create a  Library.
 
-## Problem Statement
 
-- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
 
 ## Project Skeleton
 
 ```
-008 - Clarus Library (folder)
+008 - Library (folder)
 |
 |----readme.md         # Given to the students (Definition of the project)
 SOLUTION
@@ -79,11 +76,7 @@ SOLUTION
 └── yarn.lock
 ```
 
-## Expected Outcome
 
-![Clarus Library](clarus-library.gif)
-
-## Objective
 
 Build a Clarus Library using ReactJS.
 
@@ -97,13 +90,6 @@ Build a Clarus Library using ReactJS.
 
 - ReactJS
 
-### At the end of the project, students will be able to;
-
-- improve coding skills within HTML & CSS & JS & ReactJS.
-
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
-
-## Steps to Solution
 
 - Step 1: Create React App using `yarn create react-app clarus-library`or `npx create-react-app clarus-library`
 
@@ -117,22 +103,8 @@ Build a Clarus Library using ReactJS.
 
 - Step 6: Add project gif to your project and README.md file.
 
-## Notes
 
-- You can add additional functionalities to your app.
-
-## Demo
-  <a href="https://clarus-library.vercel.app/" target="_blank">Clarus Library</a>
 
 ## Google Books API
 
 <a href="https://developers.google.com/books/docs/v1/using" target="_blank">Google Books API</a>
-
-
-## How can we create an apikey for the Google Books API ? Watch the video!
-<a href="https://www.youtube.com/watch?v=lg6yA8oSW3s" target="_blank">
-Watch the video
-</a>
-
-
-**<p align="center">&#9786; Happy Coding &#9997;</p>**
