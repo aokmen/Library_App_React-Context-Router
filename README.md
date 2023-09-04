@@ -1,10 +1,10 @@
 
 
-# Project-007 :  Library App React-Context-Router
+# Clarus Library Web Application
 
-## Description
+<h3>Visit: https://library-app-react-context-router.netlify.app/</h3>
 
-Project aims to create a  Library.
+<img alt="alt_text" src="./library.gif"/>
 
 
 
@@ -77,34 +77,64 @@ SOLUTION
 ```
 
 
+Clarus Library is a web application that allows users to search for books and magazines using the Google Books API. It provides information about books, such as titles, authors, publication dates, and descriptions. Users can also register, log in, and log out of their accounts. The application has a responsive design and allows users to toggle between light and dark themes.
 
-Build a Clarus Library using ReactJS.
+## Table of Contents
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Setup](#setup)
+- [Usage](#usage)
+- [License](#license)
 
-### At the end of the project, following topics are to be covered;
+## Technologies Used
 
-- HTML
+- **React**: The frontend of the application is built using React, a popular JavaScript library for building user interfaces.
+- **React Router**: Used for routing and navigation within the application.
+- **Styled Components**: Used for styling the components with a CSS-in-JS approach.
+- **Context API**: Used for state management and theming in the application.
+- **Axios**: Used for making HTTP requests to the Google Books API.
+- **GitHub Pages**: The application is hosted on GitHub Pages.
+- **Google Books API**: Used to fetch book and magazine data.
 
-- CSS
+## Features
 
-- JS
+- **Search Books and Magazines**: Users can search for books and magazines by entering keywords and selecting print types (all, books, magazines).
+- **User Authentication**: Users can register, log in, and log out. The authentication status is managed using the Context API.
+- **Theming**: Users can toggle between light and dark themes throughout the application.
+- **Responsive Design**: The application is responsive and works well on various screen sizes.
+- **Protected Routes**: Certain routes, such as the user's profile, are protected and can only be accessed when logged in.
+- **Detailed Book Information**: Users can click on a book to view detailed information, including the book cover, description, authors, publication date, and publisher.
 
-- ReactJS
+## Project Structure
 
+The project is structured as follows:
 
-- Step 1: Create React App using `yarn create react-app clarus-library`or `npx create-react-app clarus-library`
+- **src**: Contains the main source code for the application.
+  - **components**: Reusable components used throughout the application.
+  - **context**: Context providers for state management.
+  - **pages**: Individual pages or views for the application.
+  - **router**: Routing configuration for the application.
+  - **styles**: Global styles and theme definitions.
+  - **assets**: Images and other static assets.
+  - **helper**: Helper functions and data.
 
-- Step 2: Go to `https://developers.google.com/books/docs/v1/using?hl=tr` and get api key.
+## Screenshots
 
-- Step 3 : Using api key and `axios` for getting data from `https://www.googleapis.com/books/v1/volumes?q=${query}&printType=${printType}&key=${APP_KEY}`.
+![Home Page](/src/assets/screenshots/home.png)
+*Home Page*
 
-- Step 4: You are expected to code your project with **styled component**
+![Detail Page](/src/assets/screenshots/detail.png)
+*Detail Page*
 
-- Step 5 : You can get random login background image from `https://picsum.photos/1600/900`
+![Login Page](/src/assets/screenshots/login.png)
+*Login Page*
 
-- Step 6: Add project gif to your project and README.md file.
+## Setup
 
+1. Clone the repository:
 
+   ```bash
+   git clone https://github.com/your-username/clarus-library.git
 
-## Google Books API
-
-<a href="https://developers.google.com/books/docs/v1/using" target="_blank">Google Books API</a>
