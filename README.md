@@ -83,10 +83,8 @@ Clarus Library is a web application that allows users to search for books and ma
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Project Structure](#project-structure)
-- [Screenshots](#screenshots)
-- [Setup](#setup)
 - [Usage](#usage)
-- [License](#license)
+
 
 ## Technologies Used
 
@@ -120,21 +118,5 @@ The project is structured as follows:
   - **assets**: Images and other static assets.
   - **helper**: Helper functions and data.
 
-## Screenshots
 
-![Home Page](/src/assets/screenshots/home.png)
-*Home Page*
-
-![Detail Page](/src/assets/screenshots/detail.png)
-*Detail Page*
-
-![Login Page](/src/assets/screenshots/login.png)
-*Login Page*
-
-## Setup
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/clarus-library.git
 
