@@ -1,62 +1,48 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
-import { useBooksContext } from "../../context/BooksContext";
-import {
-  Description,
-  DetailContainer,
-  DetailImg,
-  DetailPart,
-  DetailTitle,
-  InfoPart,
-} from "./Detail.style";
-import defaultImg from "../../assets/book.jpg";
+// Detail Style
+// Detail Style
+import styled from "styled-components";
+import Flex from "../../styles/Flex";
 
-const Detail = () => {
-  const { state } = useLocation();
-  const { id } = useParams();
-  // const [detailData, setDetailData] = useState(""); //? apiden çekilmesi durumunda
-  // const { myData } = useBooksContext(); //! global datadan filtrelemek için
-  // console.log(state);
-  console.log(id);
+export const DetailContainer = styled(Flex)`
+  flex-direction: column;
+  padding: 1rem;
+`;
+export const DetailPart = styled(Flex)`
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: ${({ theme }) => theme.colors.detailBgColor};
+  color: ${({ theme }) => theme.colors.detailColor};
+  width: 80%;
+`;
 
-  // const detailGlobalData = myData.filter(item => item.id === id);
-  // console.log(detailGlobalData);
+export const DetailTitle = styled.h1`
+  margin: 25px;
+  text-align: center;
+`;
 
-  //! best practice apiden çekmek
-  // const getDetailData = async () => {
-  //   try {
-  //     const { data } = await axios(
-  //       `https://www.googleapis.com/books/v1/volumes/${id}?key=${process.env.REACT_APP_apiKey}`
-  //     );
-  //     setDetailData(data);
-  //     console.log(data);
-  //   } catch (error) {}
-  // };
-  // useEffect(() => {
-  //   getDetailData();
-  // }, []);
+export const DetailImg = styled.div`
+  margin: 2rem;
 
-  return (
-    <DetailContainer>
-      <DetailPart>
-        <DetailTitle>{state?.volumeInfo.title}</DetailTitle>
-        <DetailImg>
-          <img
-            src={state.volumeInfo?.imageLinks?.smallThumbnail || defaultImg}
-            alt={state?.volumeInfo.title}
-          />
-        </DetailImg>
-        <Description>{state?.volumeInfo?.description}</Description>
-        <InfoPart>
-          <p>{state?.volumeInfo?.authors.join(" - ")}</p>
-          <p>
-            {state.volumeInfo.publishedDate} / {state.volumeInfo?.publisher}
-          </p>
-        </InfoPart>
-      </DetailPart>
-    </DetailContainer>
-  );
-};
+  img {
+    border-radius: 1rem;
+  }
+`;
 
-export default Detail;
+export const Description = styled.div`
+  min-width: 40%;
+  text-align: justify;
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+`;
+
+export const InfoPart = styled.div`
+  min-width: 40%;
+  font-size: 1.4rem;
+  margin: 2rem;
+  text-align: center;
+  span {
+    margin: 1rem;
+  }
+`;
