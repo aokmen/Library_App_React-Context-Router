@@ -1,6 +1,6 @@
 
 
-# Clarus Library Web Application
+# Library Web Application React Context Router
 
 <h3>Visit: https://library-app-react-context-router.netlify.app/</h3>
 
